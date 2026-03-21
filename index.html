@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran Sharma | Sr. Angular Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --p-color: #6366f1; --dark: #0f172a; --bg: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: #1e293b; scroll-behavior: smooth; }
+
+        /* Navbar Custom */
+        .navbar { background: rgba(255, 255, 255, 0.9) !important; backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+        .nav-link { font-weight: 700; color: var(--dark) !important; margin: 0 10px; font-size: 0.9rem; }
+        .nav-link:hover { color: var(--p-color) !important; }
+
+        /* Hero Section */
+        .hero { padding: 160px 0 100px; background: radial-gradient(circle at 90% 10%, #e0e7ff, transparent 40%); }
+        .hero-h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.1; color: var(--dark); }
+        .typed-cursor { color: var(--p-color); font-size: 3rem; }
+
+        /* Common Card Style */
+        .g-card { background: white; border-radius: 24px; padding: 30px; border: 1px solid #f1f5f9; transition: 0.4s; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+        .g-card:hover { transform: translateY(-10px); border-color: var(--p-color); box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1); }
+
+        /* Skills Section */
+        .skill-badge { background: #f1f5f9; padding: 8px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; display: inline-block; margin: 5px; border: 1px solid #e2e8f0; transition: 0.3s; }
+        .skill-badge:hover { background: var(--p-color); color: white; border-color: var(--p-color); }
+        .ai-highlight { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
+
+        /* Blog Section */
+        .blog-list-item { border-bottom: 1px solid #eee; padding: 20px 0; transition: 0.3s; }
+        .blog-list-item:hover { padding-left: 10px; color: var(--p-color); }
+
+        /* Education Timeline Style */
+        .edu-box { border-left: 3px solid var(--p-color); padding-left: 20px; margin-bottom: 30px; position: relative; }
+        .edu-box::before { content: ''; position: absolute; left: -9px; top: 0; width: 15px; height: 15px; background: var(--p-color); border-radius: 50%; }
+
+        /* Contact Section */
+        .contact-wrapper { background: var(--dark); border-radius: 40px; padding: 60px; color: white; }
+        .form-input { background: #1e293b; border: 1px solid #334155; color: white; border-radius: 12px; padding: 15px; width: 100%; margin-bottom: 15px; }
+        .form-input:focus { outline: none; border-color: var(--p-color); }
+
+        section { padding: 100px 0; }
+        .section-tag { color: var(--p-color); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 10px; display: block; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">SIMRAN<span class="text-primary">.S</span></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item ms-lg-3"><a class="btn btn-dark rounded-pill px-4" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <span class="section-tag">Senior Software Engineer</span>
+                    <h1 class="hero-h1 mb-4">Mastering <br><span id="typed" class="text-primary"></span></h1>
+                    <p class="lead text-muted mb-5" style="max-width: 650px;">
+                        Over 4 years of experience in building high-performance applications with Angular 11-19+, RxJS, and ERPNext deployment. Currently specializing in <b>AI Voice Agents</b> and real-time calling solutions.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="SimranSharmaResume.pdf" download class="btn btn-primary btn-lg rounded-pill px-5 shadow-lg fw-bold">Download CV <i class="fas fa-download ms-2"></i></a>
+                        <a href="https://linkedin.com/in/simran-sharma-a862ab166" target="_blank" class="btn btn-outline-dark btn-lg rounded-pill px-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-white">
+        <div class="container">
+            <span class="section-tag text-center">Portfolio</span>
+            <h2 class="fw-bold text-center mb-5">Key Impact Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="g-card border-primary" style="background: linear-gradient(to bottom right, #ffffff, #f0f7ff);">
+                        <div class="d-flex justify-content-between mb-3"><i class="fas fa-robot text-primary fa-2x"></i><span class="badge bg-primary text-white">AI Automation</span></div>
+                        <h4 class="fw-bold">Humainise AI - Voice Agents</h4>
+                        <p class="text-muted small">Architecting autonomous AI Voice Agents that handle complex human interactions. Focused on low-latency streaming and real-time response management for sales and support automation.</p>
+                        <a href="https://beta.humainise.ai/" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-2">Live Project <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="g-card">
+                        <div class="d-flex justify-content-between mb-3"><i class="fas fa-tasks text-primary fa-2x"></i><span class="badge bg-light text-dark">Enterprise</span></div>
+                        <h4 class="fw-bold">Ticket & Inventory Management</h4>
+                        <p class="text-muted small">Developed Full CRUD interfaces and real-time stock tracking via Angular services. Reduced load time by 30% through AOT and Lazy Loading.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="g-card">
+                        <div class="d-flex justify-content-between mb-3"><i class="fas fa-boxes text-primary fa-2x"></i><span class="badge bg-light text-dark">ERPNext</span></div>
+                        <h4 class="fw-bold">Asset Management Deployment</h4>
+                        <p class="text-muted small">Customized and deployed ERPNext on Ubuntu using Docker. Integrated complex depreciation reporting workflows.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="g-card">
+                        <div class="d-flex justify-content-between mb-3"><i class="fas fa-credit-card text-primary fa-2x"></i><span class="badge bg-light text-dark">FinTech</span></div>
+                        <h4 class="fw-bold">Razorpay API Integration</h4>
+                        <p class="text-muted small">Implemented secure payment gateways with less than 1% failure rate. Optimized checkout flows for large-scale users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <span class="section-tag text-center">Tech Arsenal</span>
+            <h2 class="fw-bold text-center mb-5">Core Competencies</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-10 text-center">
+                    <div class="g-card py-5">
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary">AI & CALL AGENTS</h6>
+                            <div class="skill-badge ai-highlight">AI Voice Agents</div>
+                            <div class="skill-badge ai-highlight">Autonomous AI Calling</div>
+                            <div class="skill-badge ai-highlight">Prompt Engineering</div>
+                            <div class="skill-badge ai-highlight">Vapi / Retell Integration</div>
+                        </div>
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary">FRAMEWORKS & LANGUAGES</h6>
+                            <div class="skill-badge">Angular 11-19+</div><div class="skill-badge">TypeScript</div>
+                            <div class="skill-badge">JavaScript ES6+</div><div class="skill-badge">RxJS</div><div class="skill-badge">NgRx</div>
+                        </div>
+                        <div class="mb-4">
+                            <h6 class="fw-bold text-primary">UI & LIBRARIES</h6>
+                            <div class="skill-badge">PrimeNG</div><div class="skill-badge">Angular Material</div><div class="skill-badge">Bootstrap</div><div class="skill-badge">SCSS</div>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-primary">BACKEND & DEVOPS</h6>
+                            <div class="skill-badge">ERPNext</div><div class="skill-badge">RESTful APIs</div><div class="skill-badge">SQL</div><div class="skill-badge">Docker</div><div class="skill-badge">GitHub</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <span class="section-tag">Academics</span>
+                    <h2 class="fw-bold mb-5">Education</h2>
+                    <div class="edu-box">
+                        <h5 class="fw-bold mb-0">Master of Computer Application (MCA)</h5>
+                        <p class="text-muted small mb-2">GGSIPU, Delhi | 2017 - 2020</p>
+                        <h6 class="text-primary fw-bold">7.9 CGPA</h6>
+                    </div>
+                    <div class="edu-box">
+                        <h5 class="fw-bold mb-0">Bachelor of Science (PCM)</h5>
+                        <p class="text-muted small">CCS University, UP | 2014 - 2017</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-tag">Excellence</span>
+                    <h2 class="fw-bold mb-5">Achievements</h2>
+                    <div class="g-card bg-light border-0">
+                        <div class="mb-3 d-flex align-items-center"><i class="fas fa-medal text-warning me-3 fa-lg"></i><span>4-Time <strong>Performer of the Month</strong> at Hopefloats.</span></div>
+                        <div class="mb-3 d-flex align-items-center"><i class="fas fa-award text-warning me-3 fa-lg"></i><span><strong>3rd Prize</strong> for paper presentation on "MOBIGINIE".</span></div>
+                        <div class="d-flex align-items-center"><i class="fas fa-certificate text-warning me-3 fa-lg"></i><span>Professional Diploma in Computer Application (NCIT).</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="bg-light">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-md-6"><span class="section-tag">Knowledge Sharing</span><h2 class="fw-bold">Technical Insights</h2></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="blog-list-item d-flex justify-content-between align-items-center">
+                        <div><h5 class="fw-bold mb-1">Building AI-Powered Voice Interfaces</h5><p class="text-muted small mb-0">Implementing real-time speech-to-text and autonomous response logic.</p></div>
+                        <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                    <div class="blog-list-item d-flex justify-content-between align-items-center">
+                        <div><h5 class="fw-bold mb-1">Scaling Enterprise Apps to Angular 19</h5><p class="text-muted small mb-0">Deep dive into AOT compilation and Lazy Loading strategies.</p></div>
+                        <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                    <div class="blog-list-item d-flex justify-content-between align-items-center">
+                        <div><h5 class="fw-bold mb-1">Reactive State with RxJS & NgRx</h5><p class="text-muted small mb-0">Managing complex data flows in multi-user inventory systems.</p></div>
+                        <i class="fas fa-chevron-right text-muted"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-wrapper shadow-lg">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="fw-bold mb-4">Let's build something <span class="text-primary">remarkable</span>.</h2>
+                        <p class="opacity-75 mb-4">Open for senior engineering roles, architectural consulting, and AI collaborations.</p>
+                        <div class="mb-3"><i class="fas fa-envelope text-primary me-3"></i> simranbhadula21@gmail.com</div>
+                        <div class="mb-3"><i class="fas fa-phone text-primary me-3"></i> +91 8800522919</div>
+                        <div><i class="fas fa-location-dot text-primary me-3"></i> New Delhi, India</div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form action="https://formspree.io/f/xojklvlg" method="POST">
+                            <div class="row">
+                                <div class="col-md-6"><input type="text" name="name" class="form-input" placeholder="Name" required></div>
+                                <div class="col-md-6"><input type="email" name="email" class="form-input" placeholder="Email" required></div>
+                            </div>
+                            <textarea name="message" class="form-input" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold shadow">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center text-muted border-top bg-white">
+        <p class="mb-0 small">&copy; 2026 Simran Sharma | Senior Software Engineer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['AI Voice Agents.', 'Angular Architecture.', 'Scalable Frontend.', 'ERPNext Solutions.'],
+            typeSpeed: 60, backSpeed: 40, loop: true
+        });
+    </script>
+</body>
+</html>
